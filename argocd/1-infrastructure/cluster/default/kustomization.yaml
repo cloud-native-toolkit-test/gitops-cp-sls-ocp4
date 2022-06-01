@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - base/cert-manager-certmgr.yaml
   - base/ibm-sls-ibm-entitlement.yaml
-  - base/mongo-mongo-ce-sa-rbac.yaml
   - base/mongo-mongo-ce-sa-sa.yaml
   - base/mongo-mongodb-kubernetes-operator-rbac.yaml
   - base/mongo-mongodb-kubernetes-operator-sa.yaml
