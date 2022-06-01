@@ -12,4 +12,3 @@ resources:
   - base/namespace-ibm-sls.yaml
   - base/namespace-mongo.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
-  - base/openshift-marketplace-ibm-entitlement-key.yaml
