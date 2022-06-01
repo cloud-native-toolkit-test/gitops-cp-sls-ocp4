@@ -1,0 +1,30 @@
+slsinstance:
+  name: sls
+  spec:
+    license:
+      accept: true
+    domain: toolkit-dev-ocp48-gitops2-2ab66b053c14936810608de9a1deac9c-0000.us-east.containers.appdomain.cloud
+    mongo:
+      configDb: admin
+      nodes:
+        - host: 'mongo-ce.mongo.svc'
+          port: 27017
+      secretName: sls-mongo-credentials
+      authMechanism: DEFAULT
+      retryWrites: true
+    settings:
+      auth:
+        enforce: true
+      compliance:
+        enforce: true
+      reconciliation:
+        enabled: true
+        reconciliationPeriod: 1800
+      registration:
+        open: true
+      reporting:
+        maxDailyReports: 90
+        maxHourlyReports: 24
+        maxMonthlyReports: 12
+        reportGenerationPeriod: 3600
+        samplingPeriod: 900
