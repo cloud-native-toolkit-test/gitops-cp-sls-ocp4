@@ -5,6 +5,7 @@ resources:
   - base/ibm-sls-ibm-entitlement.yaml
   - base/mongo-mongo-ce-sa-rbac.yaml
   - base/mongo-mongo-ce-sa-sa.yaml
+  - base/mongo-mongodb-kubernetes-operator-rbac.yaml
   - base/mongo-mongodb-kubernetes-operator-sa.yaml
   - base/namespace-ibm-sls.yaml
   - base/namespace-mongo.yaml
