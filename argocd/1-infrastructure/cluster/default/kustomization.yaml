@@ -6,6 +6,7 @@ resources:
   - base/mongo-mongo-ce-sa-rbac.yaml
   - base/mongo-mongo-ce-sa-sa.yaml
   - base/mongo-mongodb-kubernetes-operator-sa.yaml
+  - base/mongo-mongodb-kubernetes-operator-scc.yaml
   - base/mongo-sealed-secret-cert-rbac.yaml
   - base/namespace-ibm-sls.yaml
   - base/namespace-mongo.yaml
