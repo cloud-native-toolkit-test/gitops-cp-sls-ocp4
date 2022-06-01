@@ -2,5 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - base/mongo-mongo-ce-operator.yaml
+  - instances/ibm-sls-ibm-sls-operator-instance.yaml
   - instances/mongo-mongo-ce.yaml
   - operators/ibm-sls-ibm-sls-operator-subscription.yaml
