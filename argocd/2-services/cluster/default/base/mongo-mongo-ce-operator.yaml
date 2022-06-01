@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mongo-mongo-ce-operator
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: mongo
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/mongo/mongo-ce-operator
+    repoURL: https://github.com/cloud-native-toolkit-test/gitops-cp-sls-ocp4
+    targetRevision: main
+    helm:
+      releaseName: mongo-ce-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
