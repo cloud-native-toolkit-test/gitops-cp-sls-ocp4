@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ibm-sls-ibm-sls-operator-instance
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: ibm-sls
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/ibm-sls/ibm-sls-operator-instance
+    repoURL: https://github.com/cloud-native-toolkit-test/gitops-cp-sls-ocp4
+    targetRevision: main
+    helm:
+      releaseName: ibm-sls-operator-instance
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
