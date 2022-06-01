@@ -2,6 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - base/cert-manager-certmgr.yaml
+  - base/ibm-sls-ibm-entitlement.yaml
   - base/namespace-ibm-sls.yaml
   - base/namespace-mongo.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
