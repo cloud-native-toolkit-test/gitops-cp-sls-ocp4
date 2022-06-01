@@ -6,6 +6,5 @@ resources:
   - base/mongo-mongodb-kubernetes-operator-rbac.yaml
   - base/mongo-mongodb-kubernetes-operator-sa.yaml
   - base/mongo-mongodb-kubernetes-operator-scc.yaml
-  - base/namespace-ibm-sls.yaml
   - base/namespace-mongo.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
