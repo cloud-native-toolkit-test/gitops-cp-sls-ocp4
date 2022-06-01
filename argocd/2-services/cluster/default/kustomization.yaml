@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - base/mongo-mongo-ce-operator.yaml
   - instances/mongo-mongo-ce.yaml
+  - operators/ibm-sls-ibm-sls-operator-subscription.yaml
